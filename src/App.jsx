@@ -1,12 +1,14 @@
 
-import Nav from "./components/Nav";
-import Mainroutes from "./routes/mainroutes";
+import React from 'react'
+
+import Navbar from './components/Navbar';
+import Mainroutes from './routes/Mainroutes';
 
 const App = () => {
   return (
-    <div className= "   w-screen h-screen text-white bg-gray-600 justify-center">
-<Nav/>
-   <Mainroutes/>
+    <div className = " py-10 px-[10%] w-screen h-screen text-white font-thin bg-gray-800">
+    <Navbar/>
+      <Mainroutes />
     </div>
   )
 }
