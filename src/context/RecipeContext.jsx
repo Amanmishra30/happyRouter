@@ -5,7 +5,7 @@ const RecipeContext = (props) => {
     const [data,setdata] = useState([]);
   return (
     <Recipecontext.Provider value = {{data,setdata}}>
-        {props.children}
+       {props.children}
     </Recipecontext.Provider>
   )
 }

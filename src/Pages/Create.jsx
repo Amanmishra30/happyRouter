@@ -36,32 +36,33 @@ const Create = () => {
 
         <input
       className="border-b outline-0 p-2"
-       {...register("chef Name")} 
-       placeholder="">
+       {...register("chef ")} 
+       type = "text"
+       placeholder="Chef Name">
         </input>
 
-       <small className = "text-red-500"> 
-       This is how the error is shown 
-       </small> 
+       
        <textarea
       className="border-b outline-0 p-2"
        {...register("ingredients")} 
        placeholder="// start from here ">
         </textarea>
 
-       <small className = "text-red-500"> 
-       This is how the error is shown 
-       </small> 
+       
 
        <textarea
       className="border-b outline-0 p-2"
        {...register("instructions")} 
        placeholder="//write ingredients seperated by comma">
         </textarea>
-        <small className = "text-red-500"> 
-       This is how the error is shown 
-       </small> 
 
+        
+       <textarea
+      className="border-b outline-0 p-2"
+       {...register("instructions")} 
+       placeholder="//write intructions  seperated by comma">
+        </textarea>
+        
       <Select 
       className="border-b outline-0 p-2"
        {...register("Category")} 

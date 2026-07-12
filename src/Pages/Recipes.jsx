@@ -1,9 +1,9 @@
 import { useContext } from "react ";
-import {datacontext} from "../context/RecipeContext";
+import { Recipecontext} from "../context/RecipeContext";
 
 const Recipes = () => {
 
-    const {data } = useContext(datacontext);
+    const {data } = useContext(recipecontext);
     const renderrecipes = data.map((recipe) => (
         <div key= {Recipes.id}>
             <h1>
@@ -11,9 +11,9 @@ const Recipes = () => {
             </h1>
         </div>
     ))
-  return 
-    
-  <div>Rrecipes</div>
+
+  return  
+  <div> {renderrecipes}</div>
 }
 
 export default Recipes
